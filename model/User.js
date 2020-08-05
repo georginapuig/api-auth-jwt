@@ -32,7 +32,7 @@ const userSchema = new mongoose.Schema({
   },
   gender: {
     type: String,
-    enum: ["male", "female"]
+    enum: ['male', 'female']
   },
   hobby: {
     type: String,
@@ -45,4 +45,4 @@ const userSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model('User', userSchema);
