@@ -16,5 +16,6 @@ A node.js api that is going to handle Authentication.
 * Express
 * Mongodb
 * Mongoose
+* Dotenv
 * JWT
 * Bcryptjs
