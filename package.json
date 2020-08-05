@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/georginapuig/api-auth-jwt/issues"
   },
-  "homepage": "https://github.com/georginapuig/api-auth-jwt#readme"
+  "homepage": "https://github.com/georginapuig/api-auth-jwt#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
