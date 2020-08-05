@@ -1,4 +1,4 @@
-# nodejs api authentication with JWT
+# Node.js api authentication with JWT
 
 A node.js api that is going to handle Authentication.
 
