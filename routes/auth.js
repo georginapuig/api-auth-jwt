@@ -1,8 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../model/User');
+const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const { registerValidation, loginValidation } = require('../validation');
+const { valid } = require('@hapi/joi');
 
 // register route
 router.post('/register', async (req, res) => {
@@ -44,7 +46,13 @@ router.post('/login', async (req, res) => {
 
   // check if the email exists
   const user = await User.findOne({ email: req.body.email });
-  if (!user) return res.status(400).send('Email or passsword is wrong');
+  if (!user) return res.status(400).send('Email is not found');
+
+  // password is correct
+  const validPass = await bcrypt.compare(req.body.password, user.password);
+  if (!valid) return res.status(400).send('Invalid password');
+
+  res.send('Logged in');
 });
 
 module.exports = router;
