@@ -1,2 +1,0 @@
-DB_CONNECT=mongodb+srv://georgina:geo1235@cluster0.vkaw5.mongodb.net/<dbname>?retryWrites=true&w=majority
-TOKEN_SECRET=gshethlrjgne;oir
