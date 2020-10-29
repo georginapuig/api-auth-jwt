@@ -8,7 +8,9 @@
 
 ## General info
 
-A [node.js api](https://www.youtube.com/watch?v=2jqok-WgelI&t=149s) that is going to handle Authentication.
+A [node.js](https://www.youtube.com/watch?v=2jqok-WgelI&t=149s) api authentication with JWT
+
+
 
 ## Technologies
 
